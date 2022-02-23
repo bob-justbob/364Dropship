@@ -6,8 +6,10 @@
   text-decoration: none;
   font-size: 14px;
 }
+/* header */
 header {
   background-color: rgba(36, 41, 62, 0.8);
+  text-transform: uppercase;
 }
 
 .hed {
@@ -36,6 +38,7 @@ nav ul li {
   font-size: 14px;
   font-weight: 700;
   justify-content: space-between;
+  margin: 0 10px;
 }
 
 .facebook {
@@ -47,9 +50,62 @@ nav ul li {
   color: rgb(97, 213, 223);
   border: 2px solid rgb(97, 213, 223);
   padding: 7px 16px;
+  width: 10%;
+}
+
+.blue:hover {
+  background-color: rgb(124, 214, 223);
+  color: #fff;
 }
 
 .loging {
   color: rgb(97, 213, 223);
   padding: 20px 13px;
+}
+
+/* banner */
+
+.banner {
+  width: 100%;
+  height: 895px;
+  background-image: url(https://www.365dropship.com/wp-content/uploads/2020/06/hero-1.jpg);
+  background-repeat: no-repeat;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.banner-content {
+  height: 895px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bannerimage {
+  width: 955px;
+  height: 180px;
+  background-color: rgba(36, 41, 62, 0.8);
+  padding: 25px;
+  color: rgb(255, 255, 255);
+  font-size: 36px;
+  font-weight: 400;
+}
+.img {
+  padding-top: 50px;
+}
+.text {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.up {
+  background-color: rgb(97, 213, 223);
+  color: rgb(255, 255, 255);
+  font-size: 36px;
+  padding: 15px 30px;
+}
+
+.move {
+  margin-top: 20px;
 }
