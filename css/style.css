@@ -190,6 +190,7 @@ section p {
   width: 350px;
   display: flex;
   justify-content: center;
+  margin: 30px 0;
 }
 .unique img {
   margin-right: 10px;
@@ -399,15 +400,20 @@ strong {
 
   background-color: rgb(36, 41, 62);
 }
+
+.border {
+  width: 100%;
+  position: relative;
+}
 .select {
   display: flex;
   justify-content: center;
   height: 75px;
-  gap: 1rem;
-  width: 25%;
-  border-bottom: 3px solid #fff;
+  width: 100%;
   margin-bottom: 10px;
   width: 30%;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
 }
 
 .select p {
@@ -419,6 +425,7 @@ strong {
   line-height: 22px;
   font-size: 16px;
   font-weight: 700;
+  width: 30%;
 }
 
 .border {
@@ -532,28 +539,32 @@ p {
   .banner-text {
     width: 100%;
   }
-  section {
-    width: 100%;
-  }
+
   .grid-c {
     grid-template-columns: repeat(2, 225px);
   }
   .select {
     width: 100%;
-    justify-content: left;
   }
   .select p {
     margin-bottom: 50%;
     width: 50%;
   }
-  .advanced_Ui {
+
+  .logoImage {
+    width: 100%;
+  }
+  .blue {
+    width: 30vh;
   }
 }
 
 @media (max-width: 600px) {
   .select {
     border: none;
-    flex-wrap: wrap;
+  }
+  .blue {
+    width: 60vh;
   }
   .advanced_Ui {
     width: 70%;
@@ -600,5 +611,9 @@ p {
   }
   .flex-b {
     flex-direction: column;
+  }
+  .select {
+    flex-shrink: 1;
+    overflow: scroll;
   }
 }
