@@ -231,6 +231,7 @@ section p {
   padding-top: 90px;
 }
 
+
 .content-a {
   width: 100%;
   padding: 90px 0;
@@ -250,23 +251,68 @@ section p {
   padding: 5px 10px;
   width: 450px;
   position: relative;
+
+
+}
+@media (max-width: 440px) {
+  .flex div {
+    width: 380px;
+  }
 }
 
+@media (max-width: 440px) {
+  .flex div {
+    width: 350px;
+  }
+}
 .updown {
   display: flex;
   padding: 20px 0;
   width: 100%;
   height: 110px;
+  flex-direction: row;
+}
+@media (max-width: 460px) {
+  .updown {
+    height: 200px;
+  }
+}
+
+
+.numb {
+  width: 20%;
+  margin: 0;
+  padding: 0;
+
+}
+
+@media (max-width: 500px) {
+  .numb {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 400px) {
+  .numb {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  
+  }    font-size: 20px;
 }
 
 .unique,
 .products,
 .desination {
   border: 3px dotted rgb(97, 213, 223);
-  width: 350px;
+  width: 300px;
   display: flex;
   justify-content: center;
   margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .unique img {
   margin-right: 10px;
@@ -289,6 +335,24 @@ section p {
   padding-left: 10px;
   margin-left: 30px;
 }
+@media (max-width:  540px) {
+  .text h1, .text h2 {
+    width: 100%;
+    font-size: 35px;
+  }
+  .text p{
+    font-size: 20px;
+  }
+  .text p strong {
+    font-size: 25px;
+  }
+}
+@media (max-width: 430px) {
+  .text h1, .text h2 {
+    font-size: 25px;
+  }
+}
+
 
 .section-a h4 {
   color: rgb(54, 67, 114);
@@ -329,12 +393,16 @@ section p {
 }
 @media (max-width: 850px) {
   .center-div {
-    grid-template-columns: repeat(1, 1fr);
-    width: 100%;
+    grid-template-columns: repeat(1, 350px);
+    margin: 0;
     gap: 10vh;
+    left: 0;
+    width:  200px;
+    justify-content: left;
   }
   .inlineblock {
     width: 100%;
+
   }
   .center {
     margin-top: 5vh;
@@ -573,15 +641,36 @@ strong {
 
   box-shadow: 0 0.1px 0 0.3px rgb(8, 169, 243);
 }
-@media (max-width: 1460px) {
+@media (max-width: 1480px) {
   .shadow {
-    width: 280px;
+    width: 300px;
   }
   .imgbox img {
     width: 100%;
     height: 100%;
   }
 }
+@media (max-width: 458px) {
+  .shadow {
+    width: 100px;
+  }
+  .imgbox {
+    width: 80%;
+  }
+  .boxtext {
+    width: 50%;
+  }
+  .boxtext p {
+    width: 60%;
+  }
+  .imgbox {
+    width: 50%;
+  }
+  img {
+    width: 50%;
+  }
+}
+
 
 @media (max-width: 1250px) {
   .boxescenter {
@@ -726,7 +815,7 @@ iframe {
 .sliderbtn {
 position: absolute;
   bottom: 18vh;
-
+  
   width: 100%;
   text-align: center;
 }
@@ -742,6 +831,24 @@ position: absolute;
   }
   .slider {
     height: 950px;
+  }
+}
+@media (max-width: 510px) {
+  .slider {
+    height: 1100px;
+  }
+}
+@media (max-width: 411px) {
+  .slider {
+    height: 1300px;
+  }
+}
+@media (max-width: 510px) {
+  .sliderbtn a {
+    margin-top: 35vh;
+  }
+  .sliderbtn {
+    padding: 10vh 0;
   }
 }
 
